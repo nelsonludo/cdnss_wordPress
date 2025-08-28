@@ -3,14 +3,15 @@ version: "3.8"
 services:
   # Service de la base de données PostgreSQL
   db:
-    image: postgres:15-alpine
+    image: mariadb:10.6
     container_name: cdnss_db
     environment:
-      POSTGRES_DB: wordpress_db
-      POSTGRES_USER: wordpressuser
-      POSTGRES_PASSWORD: votremotdepasse
+      MYSQL_DATABASE: wordpress_db
+      MYSQL_USER: wordpressuser
+      MYSQL_PASSWORD: votremotdepasse
+      MYSQL_ROOT_PASSWORD: rootpassword
     volumes:
-      - db_data:/var/lib/postgresql/data
+      - db_data:/var/lib/mysql
     restart: always
 
   # Service de l'application WordPress
@@ -22,13 +23,13 @@ services:
     depends_on:
       - db
     environment:
-      WORDPRESS_DB_HOST: db:5432
+      WORDPRESS_DB_HOST: db:3306
       WORDPRESS_DB_USER: wordpressuser
       WORDPRESS_DB_PASSWORD: votremotdepasse
       WORDPRESS_DB_NAME: wordpress_db
     volumes:
-      - wp_data:/var/www/html
-      - ./pg4wp:/var/www/html/wp-content/pg4wp
+      - ./wordpress:/var/www/html
+      # - ./pg4wp:/var/www/html/wp-content/pg4wp
     restart: always
 
 # Volumes persistants
