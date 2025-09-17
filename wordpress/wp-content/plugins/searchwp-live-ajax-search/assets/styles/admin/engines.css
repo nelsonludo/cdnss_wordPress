@@ -1,0 +1,198 @@
+#searchwp-settings-engines {
+	opacity: 0.5;
+	filter: blur(2px);
+	pointer-events: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+.vue-slider {
+	position: relative;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	display: block;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.swp-w-1\/2 {
+	width: 50%
+}
+
+.vue-slider-mark {
+	position: absolute;
+}
+
+.vue-slider-rail {
+	position: relative;
+	height: 1px;
+	background-color: rgb(232, 232, 235);
+}
+
+.vue-slider-process {
+	position: relative;
+	height: 100%;
+	top: 0px;
+	left: 0%;
+	width: 0%;
+	transition-property: width, left;
+	transition-duration: 0.5s;
+	background-color: rgb(43, 102, 209);
+}
+
+.vue-slider-marks {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.vue-slider-ltr .vue-slider-mark {
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+.vue-slider-mark-step {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px #e8e8e8;
+	background-color: #fff
+}
+
+.vue-slider-mark-step-active {
+	box-shadow: 0 0 0 2px #9cd5ff
+}
+
+.vue-slider-dot {
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	transform: translate(-50%, -50%);
+	top: 1px;
+}
+
+.vue-slider-dot-handle {
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 2px solid #9cd5ff;
+	box-sizing: border-box;
+	transition: box-shadow .3s, border-color .3s
+}
+
+.swp-main-content {
+	flex-grow: 1
+}
+
+.swp-sidebar {
+	-ms-flex-preferred-size: 31%;
+	flex-basis: 31%;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	max-width: 315px
+}
+
+.swp-sidebar-box {
+	background: var(--white);
+	border: 1px solid var(--borderColor);
+	-webkit-box-shadow: 0 2px 2px var(--borderShadow);
+	box-shadow: 0 2px 2px var(--borderShadow);
+	border-radius: 4px;
+	padding: 25px 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	gap: 20px
+}
+
+.swp-sidebar--progress-header {
+	padding: 0 0 26px;
+	position: relative;
+	margin-bottom: 8px
+}
+
+.swp-index-status {
+	padding-left: 15px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 1.5
+}
+
+.swp-sidebar-box--content .swp-desc {
+	font-size: 12px;
+	line-height: 1.6;
+	margin-top: 15px
+}
+
+.swp-index-stats span {
+	font-size: 13px;
+	line-height: 1.2
+}
+
+.swp-button.swp-button--green-text {
+	color: var(--primary);
+	border-color: var(--primary)
+}
+
+.swp-progress-bar--container {
+	width: 100%;
+	height: 3px;
+	border-radius: 4px;
+	position: absolute;
+	bottom: -2px
+}
+
+.swp-progress-bar {
+	width: 100%;
+	height: 3px;
+	background: rgba(var(--neutralRGB), .1);
+	position: relative;
+	transition: width 1s ease-in-out;
+	background-color: #ececec;
+	background-size: 30px 30px;
+	background-image: linear-gradient(135deg, rgba(var(--neutralRGB), .2) 25%, transparent 25%, transparent 50%, rgba(var(--neutralRGB), .2) 50%, rgba(var(--neutralRGB), .2) 75%, transparent 75%, transparent);
+	animation: swp-progress 3s linear infinite
+}
+
+.swp-progress-bar--completed {
+	max-width: 100%;
+	height: 3px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: var(--accent)
+}
+
+.swp-slider--container {
+	position: relative;
+	cursor: pointer
+}
+
+.swp-tooltip {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+.swp-tooltip--info {
+	display: inline-block;
+	width: 17px;
+	height: 17px
+}
+
+.swp-tooltip--info::before {
+	content: url("data:image/svg+xml,%3Csvg class='swp-help-icon swp-tooltip' width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 8.50008C0 3.90008 3.73333 0.166748 8.33333 0.166748C12.9333 0.166748 16.6667 3.90008 16.6667 8.50008C16.6667 13.1001 12.9333 16.8334 8.33333 16.8334C3.73333 16.8334 0 13.1001 0 8.50008ZM9.16667 11.8334V13.5001H7.5V11.8334H9.16667ZM8.33334 15.1667C4.65834 15.1667 1.66667 12.1751 1.66667 8.50008C1.66667 4.82508 4.65834 1.83341 8.33334 1.83341C12.0083 1.83341 15 4.82508 15 8.50008C15 12.1751 12.0083 15.1667 8.33334 15.1667ZM5 6.83342C5 4.99175 6.49167 3.50008 8.33333 3.50008C10.175 3.50008 11.6667 4.99175 11.6667 6.83342C11.6667 7.90251 11.0083 8.47785 10.3673 9.03803C9.75918 9.56947 9.16667 10.0873 9.16667 11.0001H7.5C7.5 9.48235 8.2851 8.88057 8.97537 8.35148C9.51686 7.93642 10 7.56609 10 6.83342C10 5.91675 9.25 5.16675 8.33333 5.16675C7.41667 5.16675 6.66667 5.91675 6.66667 6.83342H5Z' fill='%230E2121' fill-opacity='0.3'%3E%3C/path%3E%3C/svg%3E")
+}
