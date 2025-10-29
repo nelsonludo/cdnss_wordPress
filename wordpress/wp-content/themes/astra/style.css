@@ -62,3 +62,107 @@ Astra local fonts feature is based on Webfonts Loader by WordPress Themes Team (
 Licensed under MIT ( https://github.com/WPTT/webfont-loader/blob/master/LICENSE )
 
 /* Note: The CSS files are loaded from assets/css/ folder. */
+
+/* Search Header */
+.advanced-search-header {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f7f8fa;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.advanced-search-header .page-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.advanced-search-header p {
+  font-size: 16px;
+  color: #6c757d;
+}
+
+/* Search Results Grid */
+.search-results-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Search Card */
+.search-card {
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.search-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.search-card-content {
+  padding: 20px;
+}
+
+.search-card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.search-card-title a {
+  text-decoration: none;
+  color: #1e73be;
+}
+
+.search-card-excerpt {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Pagination */
+.search-pagination {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.search-pagination .page-numbers {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #1e73be;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.search-pagination .page-numbers.current {
+  background-color: #1e73be;
+  color: #fff;
+  border-color: #1e73be;
+}
+
+.search-pagination .page-numbers:hover {
+  background-color: #1e73be;
+  color: #fff;
+}
+
+/* No results */
+.no-results {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
