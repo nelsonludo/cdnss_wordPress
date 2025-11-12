@@ -1,0 +1,163 @@
+/* Basic filter & results layout */
+.wajsf-filters-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Filter box */
+.wajsf-filter-box {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+.wajsf-filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wajsf-filter-header h4 {
+  margin: 0;
+  font-size: 16px;
+}
+.wajsf-filter-body {
+  margin-top: 10px;
+}
+
+/* Author list */
+.wajsf-author-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 320px;
+  overflow: auto;
+}
+.wajsf-author-item {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.wajsf-hidden-by-default {
+  display: none;
+}
+.wajsf-show-more {
+  margin-top: 8px;
+  background: none;
+  border: none;
+  color: #0073aa;
+  cursor: pointer;
+  padding: 6px;
+}
+
+/* Controls */
+.wajsf-controls {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.wajsf-apply-btn,
+.wajsf-reset-btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background: rgb(54, 103, 62);
+}
+.wajsf-apply-btn {
+  background: #5b6;
+  color: #fff;
+  border-color: #5b6;
+}
+
+/* Results */
+#wajsf-results {
+  margin-top: 18px;
+}
+.wajsf-posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.wajsf-post-card {
+  display: flex;
+  gap: 16px;
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #f0f0f0;
+  align-items: flex-start;
+}
+.wajsf-thumb img {
+  width: 140px;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+.wajsf-post-content {
+  flex: 1;
+}
+.wajsf-post-title {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+.wajsf-excerpt {
+  color: #5b6;
+  margin-bottom: 8px;
+}
+
+/* Pagination */
+.wajsf-pagination {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.wajsf-page-link {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #5b6;
+  background: #fff;
+}
+.wajsf-page-link.wajsf-current {
+  background: #5b6;
+  color: #fff;
+  border-color: #5b6;
+}
+
+/* Loading state */
+#wajsf-results.wajsf-loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Responsive: on wide screens show sidebar column; on small screens show horizontally */
+@media (min-width: 992px) {
+  /* Expect parent to use flex to create sidebar + results columns.
+	   Example: inside Elementor set two columns: left narrow (filters), right wide (results).
+	   Or use CSS grid here if you control the container. */
+}
+@media (max-width: 991px) {
+  /* make filters horizontal above results */
+  .wajsf-filters-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .wajsf-filter-box {
+    flex: 1 1 48%;
+    min-width: 200px;
+  }
+  .wajsf-post-card {
+    flex-direction: column;
+  }
+  .wajsf-thumb img {
+    width: 100%;
+    height: auto;
+  }
+}
