@@ -1,30 +1,34 @@
 [
     {
         "link": "http:\/\/localhost\/post-type-elementor-hf-sitemap-1.xml",
-        "updated": "2025-11-18T01:38:07+00:00"
+        "updated": "2025-12-02T10:24:51+00:00"
     },
     {
         "link": "http:\/\/localhost\/post-type-elementor_library-sitemap-1.xml",
-        "updated": "2025-11-18T01:38:07+00:00"
+        "updated": "2025-12-02T10:24:51+00:00"
     },
     {
         "link": "http:\/\/localhost\/post-type-page-sitemap-1.xml",
-        "updated": "2025-11-18T01:38:07+00:00"
+        "updated": "2025-12-02T10:24:51+00:00"
     },
     {
         "link": "http:\/\/localhost\/post-type-post-sitemap-1.xml",
-        "updated": "2025-11-18T01:38:07+00:00"
+        "updated": "2025-12-02T10:24:50+00:00"
     },
     {
         "link": "http:\/\/localhost\/post-type-product-sitemap-1.xml",
-        "updated": "2025-11-18T01:38:07+00:00"
+        "updated": "2025-12-02T10:24:51+00:00"
+    },
+    {
+        "link": "http:\/\/localhost\/taxonomy-type-category-sitemap-1.xml",
+        "updated": "2025-12-02T10:24:51+00:00"
     },
     {
         "link": "http:\/\/localhost\/taxonomy-type-post_tag-sitemap-1.xml",
-        "updated": "2025-11-18T01:38:07+00:00"
+        "updated": "2025-12-02T10:24:51+00:00"
     },
     {
         "link": "http:\/\/localhost\/taxonomy-type-product_cat-sitemap-1.xml",
-        "updated": "2025-11-18T01:38:07+00:00"
+        "updated": "2025-12-02T10:24:51+00:00"
     }
 ]
